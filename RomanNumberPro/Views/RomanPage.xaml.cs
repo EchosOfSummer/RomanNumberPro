@@ -11,5 +11,13 @@ public partial class RomanPage : ContentPage
     public RomanPage()
     {
         InitializeComponent();
+        Title = "Numericals";
+        ToolbarItem tbi = new ToolbarItem();
+        tbi.Text = "About";
+        this.ToolbarItems.Add(tbi);
+        tbi.Clicked += delegate
+        {
+            Navigation.PushAsync(new AboutPage());
+        };
     }
 }

@@ -37,20 +37,20 @@ public partial class App : Application
                             ContentTemplate = new DataTemplate(() => new RomanPage())
                         }
                     }
-                },
-                new Tab
-                {
-                    Title = "About",
-                    Icon = "",
-                    Items =
-                    {
-                        new ShellContent
-                        {
-                            Route = "AboutPage",
-                            ContentTemplate = new DataTemplate(() => new AboutPage())
-                        }
-                    }
-                }
+                // },
+                // new Tab
+                // {
+                //     Title = "About",
+                //     Icon = "",
+                //     Items =
+                //     {
+                //         new ShellContent
+                //         {
+                //             Route = "AboutPage",
+                //             ContentTemplate = new DataTemplate(() => new AboutPage())
+                //         }
+                //     }
+                // }
             }
         };
         MainPage = shell;
