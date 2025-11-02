@@ -14,9 +14,10 @@ public partial class RomanPage : ContentPage
     {
         InitializeComponent();
         Title = "Roman => Number";
-        ToolbarItem tbi = new ToolbarItem();
-        tbi.Text = "About";
-        this.ToolbarItems.Add(tbi);
+        // ToolbarItem tbi = new ToolbarItem();
+        // tbi.Text = "About";
+        var tbi = new ToolbarItem { Text = "About" };
+        ToolbarItems.Add(tbi);
         tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("//AboutPage");
         // tbi.Clicked += delegate
         // {

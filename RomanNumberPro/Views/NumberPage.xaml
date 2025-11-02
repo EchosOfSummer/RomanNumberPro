@@ -4,6 +4,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RomanNumberPro.Views.NumberPage">
     <ContentPage.Content>
-        
+        <ScrollView>
+            <VerticalStackLayout Padding="16" Spacing="12">
+                <Label Text="Enter a Number" />
+                <Entry x:Name="NEntryNum" Placeholder="Number" Keyboard="Numeric" />
+                <Button Text="Convert to Roman" Clicked="ConvertR"/>
+                
+                <Label Text="Result: " FontAttributes="Bold"/>
+                <Label x:Name="RResult" />
+                
+                <Label x:Name="ErrorR" TextColor="Red" IsVisible="False" />
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

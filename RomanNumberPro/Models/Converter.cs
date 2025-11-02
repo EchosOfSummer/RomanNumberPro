@@ -7,7 +7,6 @@ namespace RomanNumberPro.Models
     {
         public Converter()
         {
-
         }
 
         public string NumberToRoman(int number)
