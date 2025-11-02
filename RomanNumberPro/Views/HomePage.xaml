@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RomanNumberPro.Views.HomePage"
+             Title="Welcome!!!">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Padding="24" Spacing="20">
+                <Label Text="Welcome to Roman Number Pro"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Choices"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text="Roman => Number"
+                        SemanticProperties.Hint="Convert Roman numerals to numbers" 
+                        Clicked="Roman"/>
+                <Button Text="Number => Roman" Clicked="Number" />
+                <Button Text="Roman => Number" Clicked="About" />
+                
+                <BoxView HeightRequest="1" BackgroundColor="{DynamicResource Black}" />
+                <Label Text="Choices"
+                       FontSize="12"
+                       Opacity="0.7"
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
