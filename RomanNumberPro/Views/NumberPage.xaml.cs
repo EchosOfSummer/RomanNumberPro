@@ -9,6 +9,7 @@ namespace RomanNumberPro.Views;
 
 public partial class NumberPage : ContentPage
 {
+    private readonly Converter _converter = new();
     public NumberPage()
     {
         InitializeComponent();
@@ -33,6 +34,6 @@ public partial class NumberPage : ContentPage
             return;
         }
 
-        RResult.Text = Converter.NumberToRoman(number);
+        RResult.Text = _converter.NumberToRoman(number);
     }
 }
