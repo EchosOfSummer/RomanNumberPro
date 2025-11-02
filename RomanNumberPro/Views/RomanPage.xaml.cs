@@ -37,7 +37,7 @@ public partial class RomanPage : ContentPage
             return;
         }
 
-        var value = _converter.RomanToNumberinput);
+        var value = _converter.RomanToNumber(input);
         if (value == -1)
         {
             ErrorN.Text = "Invalid characters";
