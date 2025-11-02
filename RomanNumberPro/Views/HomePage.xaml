@@ -16,7 +16,7 @@
                        HorizontalTextAlignment="Center"/>
                 <Button Text="Roman => Number" Clicked="Roman"/>
                 <Button Text="Number => Roman" Clicked="Number" />
-                <Button Text="Roman => Number" Clicked="About" />
+                <Button Text="About" Clicked="About" />
                 
                 <BoxView HeightRequest="1" BackgroundColor="{DynamicResource Black}" />
                 <Label Text="Choices"

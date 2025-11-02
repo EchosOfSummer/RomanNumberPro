@@ -60,12 +60,13 @@ public partial class App : Application
                         new ShellContent
                         {
                             Route = "AboutPage",
-                            ContentTemplate = new DataTemplate(() => new AboutPage())
+                            ContentTemplate = new DataTemplate(() => new NumberPage())
                         }
                     }
                 }
             }
         };
+        Routing.RegisterRoute("AboutPage", typeof(AboutPage));
         MainPage = shell;
     }
 }
