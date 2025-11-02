@@ -14,7 +14,20 @@ public partial class App : Application
             {
                 new Tab
                 {
-                    Title = "Number to Roman Numerical Converter",
+                    Title = "Welcome",
+                    Icon = "",
+                    Items =
+                    {
+                        new ShellContent
+                        {
+                            Route = "HomePage",
+                            ContentTemplate = new DataTemplate(() => new NumberPage())
+                        }
+                    }
+                },
+                new Tab
+                {
+                    Title = "Number => Roman",
                     Icon = "",
                     Items =
                     {
@@ -27,7 +40,7 @@ public partial class App : Application
                 },
                 new Tab
                 {
-                    Title = "Roman Numerical to Number",
+                    Title = "Roman => Number",
                     Icon = "",
                     Items =
                     {
@@ -37,20 +50,20 @@ public partial class App : Application
                             ContentTemplate = new DataTemplate(() => new RomanPage())
                         }
                     }
-                // },
-                // new Tab
-                // {
-                //     Title = "About",
-                //     Icon = "",
-                //     Items =
-                //     {
-                //         new ShellContent
-                //         {
-                //             Route = "AboutPage",
-                //             ContentTemplate = new DataTemplate(() => new AboutPage())
-                //         }
-                //     }
-                // }
+                },
+                new Tab
+                {
+                    Title = "About",
+                    Icon = "",
+                    Items =
+                    {
+                        new ShellContent
+                        {
+                            Route = "AboutPage",
+                            ContentTemplate = new DataTemplate(() => new AboutPage())
+                        }
+                    }
+                }
             }
         };
         MainPage = shell;

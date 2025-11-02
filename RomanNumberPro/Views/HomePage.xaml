@@ -14,9 +14,7 @@
                        HorizontalTextAlignment="Center" />
                 <Label Text="Choices"
                        HorizontalTextAlignment="Center"/>
-                <Button Text="Roman => Number"
-                        SemanticProperties.Hint="Convert Roman numerals to numbers" 
-                        Clicked="Roman"/>
+                <Button Text="Roman => Number" Clicked="Roman"/>
                 <Button Text="Number => Roman" Clicked="Number" />
                 <Button Text="Roman => Number" Clicked="About" />
                 

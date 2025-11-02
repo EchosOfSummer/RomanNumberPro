@@ -13,18 +13,19 @@ public partial class HomePage : ContentPage
         InitializeComponent();
     }
 
-    private void Roman(object sender, EventArgs e)
+    private async void Roman(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        await Shell.Current.GoToAsync("//RomanPage");
     }
 
-    private void Number(object sender, EventArgs e)
+    private async void Number(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        await Shell.Current.GoToAsync("//NumberPage");
     }
 
-    private void About(object sender, EventArgs e)
+    private async void About(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        await Shell.Current.GoToAsync("//NumberPage");
     }
+
 }
