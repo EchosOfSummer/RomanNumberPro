@@ -5,6 +5,12 @@
              x:Class="RomanNumberPro.Views.HomePage"
              Title="Welcome!!!"
              Shell.TabBarIsVisible="False">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="About"
+                     Clicked="About"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
     <Grid>
         <VerticalStackLayout Padding="24" Spacing="20"
                              HorizontalOptions="Center"

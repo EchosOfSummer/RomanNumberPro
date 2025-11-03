@@ -28,4 +28,9 @@ public partial class HomePage : ContentPage
     //     await Shell.Current.GoToAsync("//AboutPage");
     // }
 
+    private async void About(object sender, EventArgs e)
+    {
+        if (Shell.Current.CurrentPage is AboutPage) return;
+        await Shell.Current.GoToAsync("AboutPage");
+    }
 }
