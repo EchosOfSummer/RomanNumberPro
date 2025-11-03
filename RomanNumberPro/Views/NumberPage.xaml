@@ -3,9 +3,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RomanNumberPro.Views.NumberPage">
-    <ContentPage.Content>
-        <ScrollView>
-            <VerticalStackLayout Padding="16" Spacing="12"
+    <Grid RowDefinitions="*,Auto" Padding="16">
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Spacing="12"
                                  HorizontalOptions="Center"
                                  VerticalOptions="Center">
                 <Label Text="Enter a Number"
@@ -16,17 +16,18 @@
                        HorizontalOptions="Center"
                        WidthRequest="260" />
                 
-                <BoxView HeightRequest="1" BackgroundColor="Black" />
-                <Button Text="Convert to Roman" Clicked="ConvertR"/>
-                <BoxView HeightRequest="1" BackgroundColor="Black" />
-                
                 <Label Text="Results: " FontAttributes="Bold"
-                       HorizontalOptions="Center" />
+                       HorizontalTextAlignment="Center" />
                 <Label x:Name="RResult" HorizontalTextAlignment="Center" />
                 
                 <Label x:Name="ErrorR" TextColor="Red" IsVisible="False"
                        HorizontalTextAlignment="Center" />
             </VerticalStackLayout>
         </ScrollView>
-    </ContentPage.Content>
+        <Button Grid.Row="1"
+                Text="Convert to Roman" 
+                Clicked="ConvertR"
+                HorizontalOptions="Center"/>
+
+    </Grid>
 </ContentPage>
