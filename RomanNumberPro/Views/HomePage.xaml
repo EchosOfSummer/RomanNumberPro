@@ -5,18 +5,23 @@
              x:Class="RomanNumberPro.Views.HomePage"
              Title="Welcome!!!">
     
-    <ContentPage.Content>
-        <ScrollView>
-            <VerticalStackLayout Padding="24" Spacing="20">
-                <Label Text="Welcome to Roman Number Pro"
-                       FontSize="28"
-                       FontAttributes="Bold"
-                       HorizontalTextAlignment="Center" 
-                       VerticalTextAlignment="End"/>
-                <Label Text="Choices"
-                       HorizontalTextAlignment="Center" 
-                       VerticalTextAlignment="End"/>
-            </VerticalStackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+    <Grid>
+        <VerticalStackLayout Padding="24" Spacing="20"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+            <Label Text="Welcome to Roman Number Pro"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Choices"
+                   HorizontalTextAlignment="Center" />
+            
+            <BoxView HeightRequest="1" BackgroundColor="Black" />
+            
+            <Button Text="Roman -> Number" Clicked="Roman" />
+            <Button Text="Number -> Roman" Clicked="Number" />
+            
+            <BoxView HeightRequest="1" BackgroundColor="Black" />
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>
