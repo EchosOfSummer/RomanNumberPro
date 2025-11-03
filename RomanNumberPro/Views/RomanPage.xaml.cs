@@ -14,15 +14,9 @@ public partial class RomanPage : ContentPage
     {
         InitializeComponent();
         Title = "Roman => Number";
-        // ToolbarItem tbi = new ToolbarItem();
-        // tbi.Text = "About";
         var tbi = new ToolbarItem { Text = "About" };
         ToolbarItems.Add(tbi);
         tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("//AboutPage");
-        // tbi.Clicked += delegate
-        // {
-        //     Navigation.PushAsync(new AboutPage());
-        // };
     }
 
     private void ConvertN(object sender, EventArgs e)
@@ -49,3 +43,10 @@ public partial class RomanPage : ContentPage
         NResult.Text = value.ToString();
     }
 }
+
+// ToolbarItem tbi = new ToolbarItem();
+// tbi.Text = "About";
+// tbi.Clicked += delegate
+// {
+//     Navigation.PushAsync(new AboutPage());
+// };

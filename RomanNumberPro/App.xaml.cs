@@ -22,10 +22,7 @@ public partial class App : Application
                         {
                             Route = "HomePage",
                             ContentTemplate = new DataTemplate(() => new HomePage())
-                        }
-                    },
-                    
-                },
+                        }}},
                 new Tab
                 {
                     Title = "Number => Roman",
@@ -36,9 +33,7 @@ public partial class App : Application
                         {
                             Route = "NumberPage",
                             ContentTemplate = new DataTemplate(() => new NumberPage())
-                        }
-                    }
-                },
+                        }}},
                 new Tab
                 {
                     Title = "Roman => Number",
@@ -49,27 +44,25 @@ public partial class App : Application
                         {
                             Route = "RomanPage",
                             ContentTemplate = new DataTemplate(() => new RomanPage())
-                        }
-                    }
-                }
-                
-                // },
-                // new Tab
-                // {
-                //     Title = "About",
-                //     Icon = "",
-                //     Items =
-                //     {
-                //         new ShellContent
-                //         {
-                //             Route = "AboutPage",
-                //             ContentTemplate = new DataTemplate(() => new NumberPage())
-                //         }
-                //     }
-                // }
-            }
-        };
-        // Routing.RegisterRoute("AboutPage", typeof(AboutPage));
+                        }}}}};
+        Routing.RegisterRoute("AboutPage", typeof(AboutPage));
         MainPage = shell;
     }
 }
+
+
+                
+// },
+// new Tab
+// {
+//     Title = "About",
+//     Icon = "",
+//     Items =
+//     {
+//         new ShellContent
+//         {
+//             Route = "AboutPage",
+//             ContentTemplate = new DataTemplate(() => new NumberPage())
+//         }
+//     }
+// }
