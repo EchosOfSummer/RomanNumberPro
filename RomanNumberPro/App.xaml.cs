@@ -15,7 +15,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "*Welcome*",
-                    Icon = "",
+                    Icon = "Home",
                     Items =
                     {
                         new ShellContent
@@ -25,8 +25,8 @@ public partial class App : Application
                         }}},
                 new Tab
                 {
-                    Title = "Num => R",
-                    Icon = "",
+                    Title = "*N => R*",
+                    Icon = "Number",
                     Items =
                     {
                         new ShellContent
@@ -36,8 +36,8 @@ public partial class App : Application
                         }}},
                 new Tab
                 {
-                    Title = "R => Num",
-                    Icon = "",
+                    Title = "R => N",
+                    Icon = "Roman",
                     Items =
                     {
                         new ShellContent
