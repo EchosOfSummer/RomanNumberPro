@@ -15,7 +15,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "*Welcome*",
-                    Icon = "Home",
+                    Icon = "Home1",
                     Items =
                     {
                         new ShellContent
@@ -26,7 +26,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "*N => R*",
-                    Icon = "Number",
+                    Icon = "Number1",
                     Items =
                     {
                         new ShellContent
@@ -37,7 +37,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "R => N",
-                    Icon = "Roman",
+                    Icon = "Roman1",
                     Items =
                     {
                         new ShellContent
