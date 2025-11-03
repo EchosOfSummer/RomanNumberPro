@@ -16,7 +16,7 @@ public partial class RomanPage : ContentPage
         Title = "Roman => Number";
         var tbi = new ToolbarItem { Text = "About" };
         ToolbarItems.Add(tbi);
-        tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("//AboutPage");
+        tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("AboutPage");
     }
 
     private void ConvertN(object sender, EventArgs e)

@@ -25,7 +25,7 @@ public partial class App : Application
                         }}},
                 new Tab
                 {
-                    Title = "Number => Roman",
+                    Title = "Num => R",
                     Icon = "",
                     Items =
                     {
@@ -36,7 +36,7 @@ public partial class App : Application
                         }}},
                 new Tab
                 {
-                    Title = "Roman => Number",
+                    Title = "R => Num",
                     Icon = "",
                     Items =
                     {

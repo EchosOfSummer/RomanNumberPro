@@ -12,10 +12,10 @@
                        FontSize="28"
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center" 
-                       VerticalTextAlignment="Center"/>
+                       VerticalTextAlignment="End"/>
                 <Label Text="Choices"
                        HorizontalTextAlignment="Center" 
-                       VerticalTextAlignment="Center"/>
+                       VerticalTextAlignment="End"/>
                 <!-- <Button Text="Roman => Number" Clicked="Roman"/> -->
                 <!-- <Button Text="Number => Roman" Clicked="Number" /> -->
                 <!-- <Button Text="About" Clicked="About" /> -->
