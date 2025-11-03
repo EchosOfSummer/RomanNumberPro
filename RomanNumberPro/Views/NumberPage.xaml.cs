@@ -13,13 +13,14 @@ public partial class NumberPage : ContentPage
     public NumberPage()
     {
         InitializeComponent();
-        Title = "Number => Roman";
-        // ToolbarItem tbi = new ToolbarItem();
-        // tbi.Text = "About";
         var tbi = new ToolbarItem { Text = "About" };
         ToolbarItems.Add(tbi);
         // this.ToolbarItems.Add(tbi);
-        tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("AboutPage");
+        tbi.Clicked += async (_, __) =>
+        {
+            if (Shell.Current.CurrentPage is AboutPage) return;
+            await Shell.Current.GoToAsync("AboutPage");
+        };
     }
 
     private void ConvertR(object sender, EventArgs e)

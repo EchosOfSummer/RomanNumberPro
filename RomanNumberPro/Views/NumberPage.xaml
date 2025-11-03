@@ -10,7 +10,7 @@
                 <Entry x:Name="NEntryNum" Placeholder="Number" Keyboard="Numeric" />
                 <Button Text="Convert to Roman" Clicked="ConvertR"/>
                 
-                <Label Text="Result: " FontAttributes="Bold"/>
+                <Label Text="Results: " FontAttributes="Bold"/>
                 <Label x:Name="RResult" />
                 
                 <Label x:Name="ErrorR" TextColor="Red" IsVisible="False" />

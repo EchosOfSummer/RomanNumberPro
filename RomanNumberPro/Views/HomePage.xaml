@@ -16,15 +16,6 @@
                 <Label Text="Choices"
                        HorizontalTextAlignment="Center" 
                        VerticalTextAlignment="End"/>
-                <!-- <Button Text="Roman => Number" Clicked="Roman"/> -->
-                <!-- <Button Text="Number => Roman" Clicked="Number" /> -->
-                <!-- <Button Text="About" Clicked="About" /> -->
-                <!-- -->
-                <!-- <BoxView HeightRequest="1" BackgroundColor="{DynamicResource Black}" /> -->
-                <!-- <Label Text="Choices" -->
-                <!--        FontSize="12" -->
-                <!--        Opacity="0.7" -->
-                <!--        HorizontalTextAlignment="Center" /> -->
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage.Content>
