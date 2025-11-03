@@ -15,7 +15,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "*Welcome*",
-                    Icon = "Home1",
+                    Icon = "",
                     Items =
                     {
                         new ShellContent
@@ -26,7 +26,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "*N => R*",
-                    Icon = "Number1",
+                    Icon = "",
                     Items =
                     {
                         new ShellContent
@@ -37,7 +37,7 @@ public partial class App : Application
                 new Tab
                 {
                     Title = "R => N",
-                    Icon = "Roman1",
+                    Icon = "",
                     Items =
                     {
                         new ShellContent
@@ -49,20 +49,3 @@ public partial class App : Application
         MainPage = shell;
     }
 }
-
-
-                
-// },
-// new Tab
-// {
-//     Title = "About",
-//     Icon = "",
-//     Items =
-//     {
-//         new ShellContent
-//         {
-//             Route = "AboutPage",
-//             ContentTemplate = new DataTemplate(() => new NumberPage())
-//         }
-//     }
-// }

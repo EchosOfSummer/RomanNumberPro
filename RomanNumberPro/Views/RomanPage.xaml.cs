@@ -44,9 +44,3 @@ public partial class RomanPage : ContentPage
     }
 }
 
-// ToolbarItem tbi = new ToolbarItem();
-// tbi.Text = "About";
-// tbi.Clicked += delegate
-// {
-//     Navigation.PushAsync(new AboutPage());
-// };

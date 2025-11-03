@@ -15,12 +15,12 @@ public partial class HomePage : ContentPage
 
     private async void Roman(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//RomanPage");
+        await Shell.Current.GoToAsync("RomanPage");
     }
 
     private async void Number(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//NumberPage");
+        await Shell.Current.GoToAsync("NumberPage");
     }
 
     // private async void About(object sender, EventArgs e)
