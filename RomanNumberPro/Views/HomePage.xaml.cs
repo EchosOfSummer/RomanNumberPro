@@ -23,9 +23,9 @@ public partial class HomePage : ContentPage
         await Shell.Current.GoToAsync("//NumberPage");
     }
 
-    private async void About(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("//AboutPage");
-    }
+    // private async void About(object sender, EventArgs e)
+    // {
+    //     await Shell.Current.GoToAsync("//AboutPage");
+    // }
 
 }

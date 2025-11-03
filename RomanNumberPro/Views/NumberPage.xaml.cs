@@ -18,7 +18,7 @@ public partial class NumberPage : ContentPage
         // tbi.Text = "About";
         var tbi = new ToolbarItem { Text = "About" };
         ToolbarItems.Add(tbi);
-        this.ToolbarItems.Add(tbi);
+        // this.ToolbarItems.Add(tbi);
         tbi.Clicked += async (_, __) => await Shell.Current.GoToAsync("AboutPage");
     }
 

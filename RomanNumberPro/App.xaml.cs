@@ -14,16 +14,17 @@ public partial class App : Application
             {
                 new Tab
                 {
-                    Title = "Welcome",
+                    Title = "*Welcome*",
                     Icon = "",
                     Items =
                     {
                         new ShellContent
                         {
                             Route = "HomePage",
-                            ContentTemplate = new DataTemplate(() => new NumberPage())
+                            ContentTemplate = new DataTemplate(() => new HomePage())
                         }
-                    }
+                    },
+                    
                 },
                 new Tab
                 {
@@ -50,23 +51,25 @@ public partial class App : Application
                             ContentTemplate = new DataTemplate(() => new RomanPage())
                         }
                     }
-                },
-                new Tab
-                {
-                    Title = "About",
-                    Icon = "",
-                    Items =
-                    {
-                        new ShellContent
-                        {
-                            Route = "AboutPage",
-                            ContentTemplate = new DataTemplate(() => new NumberPage())
-                        }
-                    }
                 }
+                
+                // },
+                // new Tab
+                // {
+                //     Title = "About",
+                //     Icon = "",
+                //     Items =
+                //     {
+                //         new ShellContent
+                //         {
+                //             Route = "AboutPage",
+                //             ContentTemplate = new DataTemplate(() => new NumberPage())
+                //         }
+                //     }
+                // }
             }
         };
-        Routing.RegisterRoute("AboutPage", typeof(AboutPage));
+        // Routing.RegisterRoute("AboutPage", typeof(AboutPage));
         MainPage = shell;
     }
 }
